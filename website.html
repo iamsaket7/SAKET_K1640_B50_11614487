@@ -2,36 +2,44 @@
 <head>
 <title>HCI</title>
 <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
 #p
 {   position:absolute;
 	
 	background-color:white;
 	width:1340px;
 	height:200px;
-	top:-1px;
+	top:50px;
 	}
 #qq{
 	margin-left:150px;
 	}
-   #list li {
-display: inline;
-margin: 80px;
-text-align: center;
-   }
-
-#list a {
-text-decoration: none;
-color: green;
-}
-
-#list {
-position:absolute;
-    top:160px;
-background-color: black;
-width:  1344px;
-height: 45px;
-border-radius: 5px;
-}
 #c{
 	position:absolute;
 	top:400px;
@@ -72,19 +80,13 @@ h4{  margin-left:550px;
 <image src="career-banner1.jpg" height="150px" id="qq" width="1000px"></image>
 </div>
 <div id="list">
-
 <ul>
-
-<li> <a href="#"> Home </a></li>
-
-<li> <a href="#"> Career Selector </a></li>
-
-<li> <a href="#"> Menu3 </a></li>
-<li> <a href="#"> Menu4 </a></li>
-<li> <a href="#"> Menu5 </a></li> 
-<li> <a href="#"> About </a></li>   
-
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
 </ul>
+
 
 </div>
 <div id="c">

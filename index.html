@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>HCI</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 10%
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+.ss
+{    margin-left:10px;
+	height:400px;
+	padding:90px;
+	
+	
+	}
+#footer{
+	height:610px;
+	width:550px;
+	background-color:white;
+	}
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: black;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+#succ{
+	
+	 background-colour:grey;
+	 }
+#f{
+	background:grey;
+	}
+
+
+
+</style>
+</head>
+<body  >
+<div id="list">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="file:///media/saket7/ALL%20FILES/HCI/HCI%20PROJECT/page2.html">After 12th</a></li>
+  <li><a href="file:///media/saket7/ALL%20FILES/HCI/HCI%20PROJECT/table.html">Career Chart</a></li>
+  <li><a href="#about">About us</a></li>
+  <li><a href="file:///media/saket7/ALL%20FILES/HCI/HCI%20PROJECT/form.html">Sign Up</a></li>
+
+ </ul>
+</div>
+
+ <div id="imk" >
+ <img src="cp4.png" height="80" style="margin-left:993px; margin-top:-16.25px; position:fixed;background-color:white;">
+ </div>
+
+
+<div class="ss" style="max-width:645px">
+	
+  <img class="mySlides" src="Engineer.jpg" style="width:180%" height="80%" >
+  <img class="mySlides" src="n2.jpg" style="width:180%" height="80%">
+  <img class="mySlides" src="scientist-lab.jpg" style="width:180%" height="80%">
+  
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div id="footer">
+<h1 align="center">Login</h1>
+
+<form action="/action_page.php">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+	</div>
+</form>
+
+<video width="650" height="" controls autoplay style="margin-top:-380px; margin-left:610px">
+<source src="_BEST CAREER ADVICE _ GUIDANCE_ (ft.Sundar Pichai).mp4" type="video/mp4">
+</video>
+
+</div>
+
+
+<div id="succ">
+<h2 style="text-align:center"><b><i> WE ARE ALREADY HELPING</i></b></h2>
+<marquee>
+	<img src="s1.jpeg" height="220">
+	<img src="s2.jpg" height="220">
+	<img src="s3.jpg" height="220">
+	<img src="s4.jpeg" height="220">
+</marquee>
+</div>
+
+<br><br><br>
+
+<div id="f" width="500"  style="border:10px solid black;">
+	<p><h2>Follow us on Social media!</h2></p>
+	<a href="www.facebook.com"><img src="fb.png"  height="40"width="40"></a>
+	<a href="www.instagram.com"><img src="in.jpeg" height="40" width="40"></a>
+	<br><i>Phone no-9876785493</i>
+	<h4 align="center">All rights reserved @2017</h4>
+	
+</div>
+</body>
+</html>
